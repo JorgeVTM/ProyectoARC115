@@ -1,0 +1,16 @@
+C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\bin\Debug\ARC115ProyectoBiblioteca.exe.config
+C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\bin\Debug\ARC115ProyectoBiblioteca.exe
+C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\bin\Debug\ARC115ProyectoBiblioteca.pdb
+C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\obj\Debug\ARC115ProyectoBiblioteca.csproj.AssemblyReference.cache
+C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\obj\Debug\ARC115ProyectoBiblioteca.csproj.SuggestedBindingRedirects.cache
+C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\obj\Debug\ARC115ProyectoBiblioteca.Properties.Resources.resources
+C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\obj\Debug\ARC115ProyectoBiblioteca.csproj.GenerateResource.cache
+C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\obj\Debug\ARC115ProyectoBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\obj\Debug\ARC115ProyectoBiblioteca.exe
+C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\obj\Debug\ARC115ProyectoBiblioteca.pdb
+C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\obj\Debug\ARC115ProyectoBiblioteca.Base.resources
+C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\obj\Debug\ARC115ProyectoBiblioteca.frmInicio.resources
+C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\obj\Debug\ARC115ProyectoBiblioteca.frmUsuarios.resources
+C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\obj\Debug\ARC115ProyectoBiblioteca.frmDevoluciones.resources
+C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\obj\Debug\ARC115ProyectoBiblioteca.frmLibros.resources
+C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\obj\Debug\ARC115ProyectoBiblioteca.frmPrestamos.resources
