@@ -36,22 +36,22 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtCarnet = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
-            this.txtAño = new System.Windows.Forms.TextBox();
+            this.txtEdad = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.txtDUI = new System.Windows.Forms.TextBox();
-            this.txtFecha = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.tablaUsuarios = new System.Windows.Forms.DataGridView();
             this.btnBorrar = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtRIFD = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dataFecha = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.tablaUsuarios)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -101,9 +101,9 @@
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(499, 165);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 18);
+            this.label4.Size = new System.Drawing.Size(46, 18);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Año";
+            this.label4.Text = "Edad";
             // 
             // label5
             // 
@@ -131,13 +131,13 @@
             this.txtApellido.Size = new System.Drawing.Size(240, 26);
             this.txtApellido.TabIndex = 7;
             // 
-            // txtAño
+            // txtEdad
             // 
-            this.txtAño.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAño.Location = new System.Drawing.Point(584, 162);
-            this.txtAño.Name = "txtAño";
-            this.txtAño.Size = new System.Drawing.Size(240, 26);
-            this.txtAño.TabIndex = 8;
+            this.txtEdad.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEdad.Location = new System.Drawing.Point(584, 162);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(240, 26);
+            this.txtEdad.TabIndex = 8;
             // 
             // txtCorreo
             // 
@@ -154,14 +154,6 @@
             this.txtDUI.Name = "txtDUI";
             this.txtDUI.Size = new System.Drawing.Size(240, 26);
             this.txtDUI.TabIndex = 22;
-            // 
-            // txtFecha
-            // 
-            this.txtFecha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFecha.Location = new System.Drawing.Point(235, 162);
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(240, 26);
-            this.txtFecha.TabIndex = 21;
             // 
             // label7
             // 
@@ -185,14 +177,23 @@
             // 
             // tablaUsuarios
             // 
+            this.tablaUsuarios.AllowUserToAddRows = false;
+            this.tablaUsuarios.AllowUserToDeleteRows = false;
+            this.tablaUsuarios.AllowUserToResizeColumns = false;
+            this.tablaUsuarios.AllowUserToResizeRows = false;
             this.tablaUsuarios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tablaUsuarios.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.tablaUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tablaUsuarios.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.tablaUsuarios.Location = new System.Drawing.Point(12, 285);
+            this.tablaUsuarios.MultiSelect = false;
             this.tablaUsuarios.Name = "tablaUsuarios";
+            this.tablaUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.tablaUsuarios.Size = new System.Drawing.Size(812, 278);
             this.tablaUsuarios.TabIndex = 25;
+            this.tablaUsuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tablaUsuarios_CellContentClick);
             // 
             // btnBorrar
             // 
@@ -204,19 +205,21 @@
             this.btnBorrar.TabIndex = 29;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
-            // btnAgregar
+            // btnGuardar
             // 
-            this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnAgregar.FlatAppearance.BorderSize = 0;
-            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(359, 248);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(116, 32);
-            this.btnAgregar.TabIndex = 30;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Location = new System.Drawing.Point(359, 248);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(116, 32);
+            this.btnGuardar.TabIndex = 30;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // txtTelefono
             // 
@@ -236,14 +239,14 @@
             this.label6.TabIndex = 31;
             this.label6.Text = "Telefono";
             // 
-            // textBox2
+            // txtRIFD
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(72, 248);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(281, 32);
-            this.textBox2.TabIndex = 34;
+            this.txtRIFD.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRIFD.Location = new System.Drawing.Point(72, 248);
+            this.txtRIFD.Multiline = true;
+            this.txtRIFD.Name = "txtRIFD";
+            this.txtRIFD.Size = new System.Drawing.Size(281, 32);
+            this.txtRIFD.TabIndex = 34;
             // 
             // label9
             // 
@@ -288,27 +291,36 @@
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 
+            // dataFecha
+            // 
+            this.dataFecha.CalendarFont = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataFecha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataFecha.Location = new System.Drawing.Point(235, 162);
+            this.dataFecha.Name = "dataFecha";
+            this.dataFecha.Size = new System.Drawing.Size(240, 26);
+            this.dataFecha.TabIndex = 37;
+            // 
             // frmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(836, 575);
+            this.Controls.Add(this.dataFecha);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtRIFD);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tablaUsuarios);
             this.Controls.Add(this.txtDUI);
-            this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtCorreo);
-            this.Controls.Add(this.txtAño);
+            this.Controls.Add(this.txtEdad);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtCarnet);
             this.Controls.Add(this.label5);
@@ -337,21 +349,21 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtCarnet;
         private System.Windows.Forms.TextBox txtApellido;
-        private System.Windows.Forms.TextBox txtAño;
+        private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.TextBox txtDUI;
-        private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView tablaUsuarios;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnBorrar;
-        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtRIFD;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DateTimePicker dataFecha;
     }
 }

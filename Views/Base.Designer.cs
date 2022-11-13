@@ -231,6 +231,7 @@
             // 
             // pnlContenedor
             // 
+            this.pnlContenedor.BackColor = System.Drawing.Color.Transparent;
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlContenedor.Location = new System.Drawing.Point(261, 0);
             this.pnlContenedor.Name = "pnlContenedor";
@@ -241,7 +242,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(48)))));
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.pnlOpciones);

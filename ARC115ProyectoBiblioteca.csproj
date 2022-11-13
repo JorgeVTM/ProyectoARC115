@@ -85,6 +85,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="entityController\UsuarioController.cs" />
+    <Compile Include="entity\Usuario.cs" />
+    <Compile Include="libs\ClearControls.cs" />
     <Compile Include="Views\Base.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,9 +178,6 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="entityController\" />
-    <Folder Include="entity\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
