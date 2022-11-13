@@ -31,22 +31,21 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cbFechaDev = new System.Windows.Forms.ComboBox();
+            this.cbFechaPrestamo = new System.Windows.Forms.ComboBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtCDisponible = new System.Windows.Forms.TextBox();
-            this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtPersona = new System.Windows.Forms.TextBox();
+            this.txtLibro = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnVender = new System.Windows.Forms.Button();
-            this.tablaVentas = new System.Windows.Forms.DataGridView();
+            this.btnBorrar = new System.Windows.Forms.Button();
+            this.tablaPrestamos = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablaVentas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablaPrestamos)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,79 +73,65 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.comboBox2);
-            this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.cbFechaDev);
+            this.panel2.Controls.Add(this.cbFechaPrestamo);
+            this.panel2.Controls.Add(this.btnGuardar);
+            this.panel2.Controls.Add(this.btnEditar);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.txtCDisponible);
-            this.panel2.Controls.Add(this.txtPrecio);
+            this.panel2.Controls.Add(this.txtPersona);
+            this.panel2.Controls.Add(this.txtLibro);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.btnVender);
-            this.panel2.Controls.Add(this.tablaVentas);
+            this.panel2.Controls.Add(this.btnBorrar);
+            this.panel2.Controls.Add(this.tablaPrestamos);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 80);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(923, 581);
             this.panel2.TabIndex = 115;
             // 
-            // comboBox2
+            // cbFechaDev
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(178, 119);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(273, 26);
-            this.comboBox2.TabIndex = 127;
+            this.cbFechaDev.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbFechaDev.FormattingEnabled = true;
+            this.cbFechaDev.Location = new System.Drawing.Point(178, 119);
+            this.cbFechaDev.Name = "cbFechaDev";
+            this.cbFechaDev.Size = new System.Drawing.Size(273, 26);
+            this.cbFechaDev.TabIndex = 127;
             // 
-            // comboBox1
+            // cbFechaPrestamo
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(178, 84);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(273, 26);
-            this.comboBox1.TabIndex = 126;
+            this.cbFechaPrestamo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbFechaPrestamo.FormattingEnabled = true;
+            this.cbFechaPrestamo.Location = new System.Drawing.Point(178, 84);
+            this.cbFechaPrestamo.Name = "cbFechaPrestamo";
+            this.cbFechaPrestamo.Size = new System.Drawing.Size(273, 26);
+            this.cbFechaPrestamo.TabIndex = 126;
             // 
-            // button3
+            // btnGuardar
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(187, 163);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(159, 32);
-            this.button3.TabIndex = 125;
-            this.button3.Text = "Cancelar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnGuardar.FlatAppearance.BorderSize = 0;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Location = new System.Drawing.Point(22, 163);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(159, 32);
+            this.btnGuardar.TabIndex = 124;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnEditar
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(22, 163);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(159, 32);
-            this.button2.TabIndex = 124;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(711, 163);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 32);
-            this.button1.TabIndex = 123;
-            this.button1.Text = "Editar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Location = new System.Drawing.Point(711, 163);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(101, 32);
+            this.btnEditar.TabIndex = 123;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -168,21 +153,21 @@
             this.label7.TabIndex = 119;
             this.label7.Text = "Fecha Prestamo:";
             // 
-            // txtCDisponible
+            // txtPersona
             // 
-            this.txtCDisponible.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCDisponible.Location = new System.Drawing.Point(178, 51);
-            this.txtCDisponible.Name = "txtCDisponible";
-            this.txtCDisponible.Size = new System.Drawing.Size(273, 26);
-            this.txtCDisponible.TabIndex = 122;
+            this.txtPersona.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPersona.Location = new System.Drawing.Point(178, 51);
+            this.txtPersona.Name = "txtPersona";
+            this.txtPersona.Size = new System.Drawing.Size(273, 26);
+            this.txtPersona.TabIndex = 122;
             // 
-            // txtPrecio
+            // txtLibro
             // 
-            this.txtPrecio.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrecio.Location = new System.Drawing.Point(178, 17);
-            this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(273, 26);
-            this.txtPrecio.TabIndex = 118;
+            this.txtLibro.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLibro.Location = new System.Drawing.Point(178, 17);
+            this.txtLibro.Name = "txtLibro";
+            this.txtLibro.Size = new System.Drawing.Size(273, 26);
+            this.txtLibro.TabIndex = 118;
             // 
             // label9
             // 
@@ -204,27 +189,27 @@
             this.label5.TabIndex = 117;
             this.label5.Text = "Libro:";
             // 
-            // btnVender
+            // btnBorrar
             // 
-            this.btnVender.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnVender.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVender.Location = new System.Drawing.Point(818, 163);
-            this.btnVender.Name = "btnVender";
-            this.btnVender.Size = new System.Drawing.Size(93, 32);
-            this.btnVender.TabIndex = 116;
-            this.btnVender.Text = "Borrar";
-            this.btnVender.UseVisualStyleBackColor = true;
+            this.btnBorrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBorrar.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrar.Location = new System.Drawing.Point(818, 163);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(93, 32);
+            this.btnBorrar.TabIndex = 116;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = true;
             // 
-            // tablaVentas
+            // tablaPrestamos
             // 
-            this.tablaVentas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tablaPrestamos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tablaVentas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tablaVentas.Location = new System.Drawing.Point(10, 201);
-            this.tablaVentas.Name = "tablaVentas";
-            this.tablaVentas.Size = new System.Drawing.Size(901, 368);
-            this.tablaVentas.TabIndex = 115;
+            this.tablaPrestamos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tablaPrestamos.Location = new System.Drawing.Point(10, 201);
+            this.tablaPrestamos.Name = "tablaPrestamos";
+            this.tablaPrestamos.Size = new System.Drawing.Size(901, 368);
+            this.tablaPrestamos.TabIndex = 115;
             // 
             // frmPrestamos
             // 
@@ -238,7 +223,7 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablaVentas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablaPrestamos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -247,18 +232,17 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cbFechaDev;
+        private System.Windows.Forms.ComboBox cbFechaPrestamo;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtCDisponible;
-        private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.TextBox txtPersona;
+        private System.Windows.Forms.TextBox txtLibro;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnVender;
-        private System.Windows.Forms.DataGridView tablaVentas;
+        private System.Windows.Forms.Button btnBorrar;
+        private System.Windows.Forms.DataGridView tablaPrestamos;
     }
 }

@@ -34,25 +34,25 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtCarnet = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
-            this.txtEdad = new System.Windows.Forms.TextBox();
-            this.txtTelPersonal = new System.Windows.Forms.TextBox();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.txtSueldo = new System.Windows.Forms.TextBox();
-            this.txtCargo = new System.Windows.Forms.TextBox();
+            this.txtAño = new System.Windows.Forms.TextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.txtDUI = new System.Windows.Forms.TextBox();
+            this.txtFecha = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.tablaEmpleados = new System.Windows.Forms.DataGridView();
-            this.btnModificar = new System.Windows.Forms.Button();
+            this.tablaUsuarios = new System.Windows.Forms.DataGridView();
+            this.btnBorrar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.tablaEmpleados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablaUsuarios)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -115,53 +115,53 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Correo";
             // 
+            // txtCarnet
+            // 
+            this.txtCarnet.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCarnet.Location = new System.Drawing.Point(235, 124);
+            this.txtCarnet.Name = "txtCarnet";
+            this.txtCarnet.Size = new System.Drawing.Size(240, 26);
+            this.txtCarnet.TabIndex = 6;
+            // 
             // txtApellido
             // 
             this.txtApellido.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellido.Location = new System.Drawing.Point(235, 124);
+            this.txtApellido.Location = new System.Drawing.Point(584, 87);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(240, 26);
-            this.txtApellido.TabIndex = 6;
+            this.txtApellido.TabIndex = 7;
             // 
-            // txtEdad
+            // txtAño
             // 
-            this.txtEdad.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEdad.Location = new System.Drawing.Point(584, 87);
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(240, 26);
-            this.txtEdad.TabIndex = 7;
+            this.txtAño.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAño.Location = new System.Drawing.Point(584, 162);
+            this.txtAño.Name = "txtAño";
+            this.txtAño.Size = new System.Drawing.Size(240, 26);
+            this.txtAño.TabIndex = 8;
             // 
-            // txtTelPersonal
+            // txtCorreo
             // 
-            this.txtTelPersonal.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelPersonal.Location = new System.Drawing.Point(584, 162);
-            this.txtTelPersonal.Name = "txtTelPersonal";
-            this.txtTelPersonal.Size = new System.Drawing.Size(240, 26);
-            this.txtTelPersonal.TabIndex = 8;
+            this.txtCorreo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCorreo.Location = new System.Drawing.Point(235, 200);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(240, 26);
+            this.txtCorreo.TabIndex = 9;
             // 
-            // txtDireccion
+            // txtDUI
             // 
-            this.txtDireccion.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccion.Location = new System.Drawing.Point(235, 200);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(240, 26);
-            this.txtDireccion.TabIndex = 9;
+            this.txtDUI.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDUI.Location = new System.Drawing.Point(584, 124);
+            this.txtDUI.Name = "txtDUI";
+            this.txtDUI.Size = new System.Drawing.Size(240, 26);
+            this.txtDUI.TabIndex = 22;
             // 
-            // txtSueldo
+            // txtFecha
             // 
-            this.txtSueldo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSueldo.Location = new System.Drawing.Point(584, 124);
-            this.txtSueldo.Name = "txtSueldo";
-            this.txtSueldo.Size = new System.Drawing.Size(240, 26);
-            this.txtSueldo.TabIndex = 22;
-            // 
-            // txtCargo
-            // 
-            this.txtCargo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCargo.Location = new System.Drawing.Point(235, 162);
-            this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(240, 26);
-            this.txtCargo.TabIndex = 21;
+            this.txtFecha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFecha.Location = new System.Drawing.Point(235, 162);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(240, 26);
+            this.txtFecha.TabIndex = 21;
             // 
             // label7
             // 
@@ -183,27 +183,27 @@
             this.label8.TabIndex = 19;
             this.label8.Text = "Fecha Nac";
             // 
-            // tablaEmpleados
+            // tablaUsuarios
             // 
-            this.tablaEmpleados.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tablaUsuarios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tablaEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tablaEmpleados.Location = new System.Drawing.Point(12, 285);
-            this.tablaEmpleados.Name = "tablaEmpleados";
-            this.tablaEmpleados.Size = new System.Drawing.Size(812, 278);
-            this.tablaEmpleados.TabIndex = 25;
+            this.tablaUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tablaUsuarios.Location = new System.Drawing.Point(12, 285);
+            this.tablaUsuarios.Name = "tablaUsuarios";
+            this.tablaUsuarios.Size = new System.Drawing.Size(812, 278);
+            this.tablaUsuarios.TabIndex = 25;
             // 
-            // btnModificar
+            // btnBorrar
             // 
-            this.btnModificar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnModificar.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(554, 248);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(116, 32);
-            this.btnModificar.TabIndex = 29;
-            this.btnModificar.Text = "Borrar";
-            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBorrar.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrar.Location = new System.Drawing.Point(697, 248);
+            this.btnBorrar.Name = "btnBorrar";
+            this.btnBorrar.Size = new System.Drawing.Size(116, 32);
+            this.btnBorrar.TabIndex = 29;
+            this.btnBorrar.Text = "Borrar";
+            this.btnBorrar.UseVisualStyleBackColor = true;
             // 
             // btnAgregar
             // 
@@ -218,13 +218,13 @@
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtTelefono
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(584, 200);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(240, 26);
-            this.textBox1.TabIndex = 32;
+            this.txtTelefono.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono.Location = new System.Drawing.Point(584, 200);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(240, 26);
+            this.txtTelefono.TabIndex = 32;
             // 
             // label6
             // 
@@ -297,20 +297,20 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.tablaEmpleados);
-            this.Controls.Add(this.txtSueldo);
-            this.Controls.Add(this.txtCargo);
+            this.Controls.Add(this.tablaUsuarios);
+            this.Controls.Add(this.txtDUI);
+            this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtDireccion);
-            this.Controls.Add(this.txtTelPersonal);
-            this.Controls.Add(this.txtEdad);
+            this.Controls.Add(this.txtCorreo);
+            this.Controls.Add(this.txtAño);
             this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.txtCarnet);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -319,7 +319,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmUsuarios";
-            ((System.ComponentModel.ISupportInitialize)(this.tablaEmpleados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablaUsuarios)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -335,19 +335,19 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtCarnet;
         private System.Windows.Forms.TextBox txtApellido;
-        private System.Windows.Forms.TextBox txtEdad;
-        private System.Windows.Forms.TextBox txtTelPersonal;
-        private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.TextBox txtSueldo;
-        private System.Windows.Forms.TextBox txtCargo;
+        private System.Windows.Forms.TextBox txtAño;
+        private System.Windows.Forms.TextBox txtCorreo;
+        private System.Windows.Forms.TextBox txtDUI;
+        private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView tablaEmpleados;
+        private System.Windows.Forms.DataGridView tablaUsuarios;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label9;
