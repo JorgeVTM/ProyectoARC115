@@ -85,7 +85,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="entityController\DevolucionesController.cs" />
+    <Compile Include="entityController\LibroController.cs" />
+    <Compile Include="entityController\LibrosPrestamosController.cs" />
     <Compile Include="entityController\UsuarioController.cs" />
+    <Compile Include="entity\Devoluciones.cs" />
+    <Compile Include="entity\Libro.cs" />
+    <Compile Include="entity\LibrosPrestamos.cs" />
     <Compile Include="entity\Usuario.cs" />
     <Compile Include="libs\ClearControls.cs" />
     <Compile Include="Views\Base.cs">

@@ -9,7 +9,7 @@ namespace ARC115ProyectoBiblioteca.entity
     public class Libro
     {
         public int id { get; set; }
-        public string ISDBN { get; set; }
+        public string ISBN { get; set; }
         public string titulo { get; set; }
         public string autor { get; set; }
         public string editorial { get; set; }

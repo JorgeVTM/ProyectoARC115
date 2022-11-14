@@ -72,17 +72,7 @@ namespace ARC115ProyectoBiblioteca
             {
                 if (!id.Equals(null) || !id.Equals(0))
                 {
-                    Usuario usuario = new Usuario();
-                    usuario.id = this.id;
-                    usuario.nombre = txtNombre.Text;
-                    usuario.apellido = txtApellido.Text;
-                    usuario.carnet = txtCarnet.Text;
-                    usuario.fechanac = dataFecha.Value;
-                    usuario.correo = txtCorreo.Text;
-                    usuario.dui = txtDUI.Text;
-                    usuario.telefono = txtTelefono.Text;
-                    usuario.rifd = txtRIFD.Text;
-
+                    Usuario usuario = new UsuarioControlle().findUsuario(this.id);
                     new UsuarioControlle().deleteUsuario(usuario);
                     MessageBox.Show("Usuario eliminado exitosamente");
                     recargarTabla();

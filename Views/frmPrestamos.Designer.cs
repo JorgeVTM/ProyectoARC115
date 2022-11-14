@@ -31,14 +31,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.cbFechaDev = new System.Windows.Forms.ComboBox();
-            this.cbFechaPrestamo = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtLibro = new System.Windows.Forms.TextBox();
+            this.cbLibros = new System.Windows.Forms.ComboBox();
+            this.cbUsuario = new System.Windows.Forms.ComboBox();
+            this.dateFechadev = new System.Windows.Forms.DateTimePicker();
+            this.dateFechapres = new System.Windows.Forms.DateTimePicker();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtPersona = new System.Windows.Forms.TextBox();
-            this.txtLibro = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnBorrar = new System.Windows.Forms.Button();
@@ -73,14 +75,16 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.cbFechaDev);
-            this.panel2.Controls.Add(this.cbFechaPrestamo);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.txtUsuario);
+            this.panel2.Controls.Add(this.txtLibro);
+            this.panel2.Controls.Add(this.cbLibros);
+            this.panel2.Controls.Add(this.cbUsuario);
+            this.panel2.Controls.Add(this.dateFechadev);
+            this.panel2.Controls.Add(this.dateFechapres);
             this.panel2.Controls.Add(this.btnGuardar);
-            this.panel2.Controls.Add(this.btnEditar);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.txtPersona);
-            this.panel2.Controls.Add(this.txtLibro);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.btnBorrar);
@@ -91,23 +95,67 @@
             this.panel2.Size = new System.Drawing.Size(923, 581);
             this.panel2.TabIndex = 115;
             // 
-            // cbFechaDev
+            // label2
             // 
-            this.cbFechaDev.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbFechaDev.FormattingEnabled = true;
-            this.cbFechaDev.Location = new System.Drawing.Point(178, 119);
-            this.cbFechaDev.Name = "cbFechaDev";
-            this.cbFechaDev.Size = new System.Drawing.Size(273, 26);
-            this.cbFechaDev.TabIndex = 127;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(637, 93);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(160, 18);
+            this.label2.TabIndex = 134;
+            this.label2.Text = "Detalles del prestamo";
             // 
-            // cbFechaPrestamo
+            // txtUsuario
             // 
-            this.cbFechaPrestamo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbFechaPrestamo.FormattingEnabled = true;
-            this.cbFechaPrestamo.Location = new System.Drawing.Point(178, 84);
-            this.cbFechaPrestamo.Name = "cbFechaPrestamo";
-            this.cbFechaPrestamo.Size = new System.Drawing.Size(273, 26);
-            this.cbFechaPrestamo.TabIndex = 126;
+            this.txtUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Location = new System.Drawing.Point(544, 163);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(346, 26);
+            this.txtUsuario.TabIndex = 133;
+            // 
+            // txtLibro
+            // 
+            this.txtLibro.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLibro.Location = new System.Drawing.Point(544, 131);
+            this.txtLibro.Name = "txtLibro";
+            this.txtLibro.Size = new System.Drawing.Size(346, 26);
+            this.txtLibro.TabIndex = 132;
+            // 
+            // cbLibros
+            // 
+            this.cbLibros.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbLibros.FormattingEnabled = true;
+            this.cbLibros.Location = new System.Drawing.Point(178, 15);
+            this.cbLibros.Name = "cbLibros";
+            this.cbLibros.Size = new System.Drawing.Size(273, 26);
+            this.cbLibros.TabIndex = 131;
+            // 
+            // cbUsuario
+            // 
+            this.cbUsuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbUsuario.FormattingEnabled = true;
+            this.cbUsuario.Location = new System.Drawing.Point(178, 50);
+            this.cbUsuario.Name = "cbUsuario";
+            this.cbUsuario.Size = new System.Drawing.Size(273, 26);
+            this.cbUsuario.TabIndex = 130;
+            // 
+            // dateFechadev
+            // 
+            this.dateFechadev.CalendarFont = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateFechadev.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateFechadev.Location = new System.Drawing.Point(178, 121);
+            this.dateFechadev.Name = "dateFechadev";
+            this.dateFechadev.Size = new System.Drawing.Size(273, 26);
+            this.dateFechadev.TabIndex = 129;
+            // 
+            // dateFechapres
+            // 
+            this.dateFechapres.CalendarFont = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateFechapres.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateFechapres.Location = new System.Drawing.Point(178, 85);
+            this.dateFechapres.Name = "dateFechapres";
+            this.dateFechapres.Size = new System.Drawing.Size(273, 26);
+            this.dateFechapres.TabIndex = 128;
             // 
             // btnGuardar
             // 
@@ -121,17 +169,7 @@
             this.btnGuardar.TabIndex = 124;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEditar.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(711, 163);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(101, 32);
-            this.btnEditar.TabIndex = 123;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label10
             // 
@@ -152,22 +190,6 @@
             this.label7.Size = new System.Drawing.Size(128, 18);
             this.label7.TabIndex = 119;
             this.label7.Text = "Fecha Prestamo:";
-            // 
-            // txtPersona
-            // 
-            this.txtPersona.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPersona.Location = new System.Drawing.Point(178, 51);
-            this.txtPersona.Name = "txtPersona";
-            this.txtPersona.Size = new System.Drawing.Size(273, 26);
-            this.txtPersona.TabIndex = 122;
-            // 
-            // txtLibro
-            // 
-            this.txtLibro.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLibro.Location = new System.Drawing.Point(178, 17);
-            this.txtLibro.Name = "txtLibro";
-            this.txtLibro.Size = new System.Drawing.Size(273, 26);
-            this.txtLibro.TabIndex = 118;
             // 
             // label9
             // 
@@ -193,12 +215,13 @@
             // 
             this.btnBorrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBorrar.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrar.Location = new System.Drawing.Point(818, 163);
+            this.btnBorrar.Location = new System.Drawing.Point(187, 163);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(93, 32);
+            this.btnBorrar.Size = new System.Drawing.Size(164, 32);
             this.btnBorrar.TabIndex = 116;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = true;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // tablaPrestamos
             // 
@@ -210,6 +233,7 @@
             this.tablaPrestamos.Name = "tablaPrestamos";
             this.tablaPrestamos.Size = new System.Drawing.Size(901, 368);
             this.tablaPrestamos.TabIndex = 115;
+            this.tablaPrestamos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tablaPrestamos_CellContentClick);
             // 
             // frmPrestamos
             // 
@@ -232,17 +256,19 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox cbFechaDev;
-        private System.Windows.Forms.ComboBox cbFechaPrestamo;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtPersona;
-        private System.Windows.Forms.TextBox txtLibro;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.DataGridView tablaPrestamos;
+        private System.Windows.Forms.ComboBox cbLibros;
+        private System.Windows.Forms.ComboBox cbUsuario;
+        private System.Windows.Forms.DateTimePicker dateFechadev;
+        private System.Windows.Forms.DateTimePicker dateFechapres;
+        private System.Windows.Forms.TextBox txtLibro;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.Label label2;
     }
 }

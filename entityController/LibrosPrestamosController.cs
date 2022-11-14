@@ -29,9 +29,9 @@ namespace ARC115ProyectoBiblioteca.entityController
                     prestamo.id = int.Parse(reader.GetString(0));
                     prestamo.pklibro = new LibroController().findLibro(int.Parse(reader.GetString(1)));
                     prestamo.pkusuario = new UsuarioControlle().findUsuario(int.Parse(reader.GetString(2)));
-                    prestamo.fechaPrestamo = DateTime.Parse(reader.GetString(4));
+                    prestamo.fechaPrestamo = DateTime.Parse(reader.GetString(3));
                     prestamo.fechaDevolucion = DateTime.Parse(reader.GetString(4));
-                    prestamo.estado = int.Parse(reader.GetString(6));
+                    prestamo.estado = int.Parse(reader.GetString(5));
                     prestamos.Add(prestamo);
                 }
             }
@@ -66,9 +66,9 @@ namespace ARC115ProyectoBiblioteca.entityController
                     prestamo.id = int.Parse(reader.GetString(0));
                     prestamo.pklibro = new LibroController().findLibro(int.Parse(reader.GetString(1)));
                     prestamo.pkusuario = new UsuarioControlle().findUsuario(int.Parse(reader.GetString(2)));
-                    prestamo.fechaPrestamo = DateTime.Parse(reader.GetString(4));
+                    prestamo.fechaPrestamo = DateTime.Parse(reader.GetString(3));
                     prestamo.fechaDevolucion = DateTime.Parse(reader.GetString(4));
-                    prestamo.estado = int.Parse(reader.GetString(6));
+                    prestamo.estado = int.Parse(reader.GetString(5));
                 }
             }
             conexion.close();

@@ -26,12 +26,12 @@ namespace ARC115ProyectoBiblioteca.entityController
                 {
                     Libro libro = new Libro();
                     libro.id = int.Parse(reader.GetString(0));
-                    libro.ISDBN = reader.GetString(1);
+                    libro.ISBN = reader.GetString(1);
                     libro.titulo = reader.GetString(2);
-                    libro.fechapublicacion = DateTime.Parse(reader.GetString(4));
-                    libro.autor = reader.GetString(5);
-                    libro.editorial = reader.GetString(6);
-                    libro.categoria = reader.GetString(7);
+                    libro.fechapublicacion = DateTime.Parse(reader.GetString(3));
+                    libro.autor = reader.GetString(4);
+                    libro.editorial = reader.GetString(5);
+                    libro.categoria = reader.GetString(6);
                     libros.Add(libro);
                 }
             }
@@ -64,12 +64,12 @@ namespace ARC115ProyectoBiblioteca.entityController
                 while (reader.Read())
                 {
                     libro.id = int.Parse(reader.GetString(0));
-                    libro.ISDBN = reader.GetString(1);
+                    libro.ISBN = reader.GetString(1);
                     libro.titulo = reader.GetString(2);
-                    libro.fechapublicacion = DateTime.Parse(reader.GetString(4));
-                    libro.autor = reader.GetString(5);
-                    libro.editorial = reader.GetString(6);
-                    libro.categoria = reader.GetString(7);
+                    libro.fechapublicacion = DateTime.Parse(reader.GetString(3));
+                    libro.autor = reader.GetString(4);
+                    libro.editorial = reader.GetString(5);
+                    libro.categoria = reader.GetString(6);
                 }
             }
             conexion.close();
@@ -82,7 +82,7 @@ namespace ARC115ProyectoBiblioteca.entityController
             string query = string.Format(
                 "insert into libros (isbn, titulo, fechapublicacion, autor, editorial, categoria) " +
                 "values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')",
-                libro.ISDBN, libro.titulo, String.Format("{0:yyyy-MM-dd}", libro.fechapublicacion),
+                libro.ISBN, libro.titulo, String.Format("{0:yyyy-MM-dd}", libro.fechapublicacion),
                 libro.autor, libro.editorial, libro.categoria
                 );
 
@@ -105,7 +105,7 @@ namespace ARC115ProyectoBiblioteca.entityController
             string query = string.Format("update libros " +
                 "set isbn='{1}', titulo='{2}', fechapublicacion='{3}', autor='{4}', editorial='{5}', categoria='{6}' " +
                 "where id={0}",
-                libro.id, libro.ISDBN, libro.titulo, String.Format("{0:yyyy-MM-dd}", libro.fechapublicacion),
+                libro.id, libro.ISBN, libro.titulo, String.Format("{0:yyyy-MM-dd}", libro.fechapublicacion),
                 libro.autor, libro.editorial, libro.categoria
                 );
 
