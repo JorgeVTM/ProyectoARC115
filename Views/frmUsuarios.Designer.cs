@@ -32,11 +32,9 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtCarnet = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
-            this.txtEdad = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.txtDUI = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,6 +50,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataFecha = new System.Windows.Forms.DateTimePicker();
+            this.btnEscaner = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tablaUsuarios)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -95,16 +94,6 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Carnet";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(499, 165);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 18);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Edad";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -130,14 +119,6 @@
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(240, 26);
             this.txtApellido.TabIndex = 7;
-            // 
-            // txtEdad
-            // 
-            this.txtEdad.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEdad.Location = new System.Drawing.Point(584, 162);
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(240, 26);
-            this.txtEdad.TabIndex = 8;
             // 
             // txtCorreo
             // 
@@ -213,7 +194,7 @@
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(359, 248);
+            this.btnGuardar.Location = new System.Drawing.Point(575, 247);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(116, 32);
             this.btnGuardar.TabIndex = 30;
@@ -224,7 +205,7 @@
             // txtTelefono
             // 
             this.txtTelefono.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(584, 200);
+            this.txtTelefono.Location = new System.Drawing.Point(584, 161);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(240, 26);
             this.txtTelefono.TabIndex = 32;
@@ -233,7 +214,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(499, 203);
+            this.label6.Location = new System.Drawing.Point(499, 164);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 18);
             this.label6.TabIndex = 31;
@@ -241,7 +222,7 @@
             // 
             // txtRIFD
             // 
-            this.txtRIFD.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRIFD.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRIFD.Location = new System.Drawing.Point(72, 248);
             this.txtRIFD.Multiline = true;
             this.txtRIFD.Name = "txtRIFD";
@@ -300,12 +281,27 @@
             this.dataFecha.Size = new System.Drawing.Size(240, 26);
             this.dataFecha.TabIndex = 37;
             // 
+            // btnEscaner
+            // 
+            this.btnEscaner.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(204)))), ((int)(((byte)(250)))));
+            this.btnEscaner.FlatAppearance.BorderSize = 0;
+            this.btnEscaner.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEscaner.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEscaner.Location = new System.Drawing.Point(359, 248);
+            this.btnEscaner.Name = "btnEscaner";
+            this.btnEscaner.Size = new System.Drawing.Size(143, 32);
+            this.btnEscaner.TabIndex = 38;
+            this.btnEscaner.Text = "Escanear";
+            this.btnEscaner.UseVisualStyleBackColor = false;
+            this.btnEscaner.Click += new System.EventHandler(this.btnEscaner_Click);
+            // 
             // frmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(836, 575);
+            this.Controls.Add(this.btnEscaner);
             this.Controls.Add(this.dataFecha);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtRIFD);
@@ -320,11 +316,9 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtCorreo);
-            this.Controls.Add(this.txtEdad);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtCarnet);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNombre);
@@ -345,11 +339,9 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtCarnet;
         private System.Windows.Forms.TextBox txtApellido;
-        private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.TextBox txtDUI;
         private System.Windows.Forms.Label label7;
@@ -365,5 +357,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DateTimePicker dataFecha;
+        private System.Windows.Forms.Button btnEscaner;
     }
 }

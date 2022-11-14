@@ -36,3 +36,5 @@ C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\bin\Debug\System.Memory.xml
 C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\obj\Debug\ARC115ProyectoBiblioteca.csproj.CopyComplete
+C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\bin\Debug\System.IO.Ports.dll
+C:\Users\jor05\source\repos\ARC115ProyectoBiblioteca\bin\Debug\System.IO.Ports.xml

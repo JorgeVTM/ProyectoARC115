@@ -43,7 +43,10 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.cbPort = new System.Windows.Forms.ComboBox();
+            this.btnConectar = new System.Windows.Forms.Button();
             this.pnlOpciones.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlOpciones
@@ -72,7 +75,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 362);
+            this.panel6.Location = new System.Drawing.Point(0, 402);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(261, 8);
             this.panel6.TabIndex = 26;
@@ -84,7 +87,7 @@
             this.btnDevoluciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDevoluciones.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDevoluciones.ForeColor = System.Drawing.Color.White;
-            this.btnDevoluciones.Location = new System.Drawing.Point(0, 312);
+            this.btnDevoluciones.Location = new System.Drawing.Point(0, 352);
             this.btnDevoluciones.Name = "btnDevoluciones";
             this.btnDevoluciones.Size = new System.Drawing.Size(261, 50);
             this.btnDevoluciones.TabIndex = 25;
@@ -97,7 +100,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 304);
+            this.panel5.Location = new System.Drawing.Point(0, 344);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(261, 8);
             this.panel5.TabIndex = 24;
@@ -109,7 +112,7 @@
             this.btnPrestamos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrestamos.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrestamos.ForeColor = System.Drawing.Color.White;
-            this.btnPrestamos.Location = new System.Drawing.Point(0, 254);
+            this.btnPrestamos.Location = new System.Drawing.Point(0, 294);
             this.btnPrestamos.Name = "btnPrestamos";
             this.btnPrestamos.Size = new System.Drawing.Size(261, 50);
             this.btnPrestamos.TabIndex = 23;
@@ -122,7 +125,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 246);
+            this.panel4.Location = new System.Drawing.Point(0, 286);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(261, 8);
             this.panel4.TabIndex = 22;
@@ -134,7 +137,7 @@
             this.btnLibros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLibros.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLibros.ForeColor = System.Drawing.Color.White;
-            this.btnLibros.Location = new System.Drawing.Point(0, 196);
+            this.btnLibros.Location = new System.Drawing.Point(0, 236);
             this.btnLibros.Name = "btnLibros";
             this.btnLibros.Size = new System.Drawing.Size(261, 50);
             this.btnLibros.TabIndex = 21;
@@ -147,7 +150,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 188);
+            this.panel3.Location = new System.Drawing.Point(0, 228);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(261, 8);
             this.panel3.TabIndex = 20;
@@ -159,7 +162,7 @@
             this.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsers.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsers.ForeColor = System.Drawing.Color.White;
-            this.btnUsers.Location = new System.Drawing.Point(0, 138);
+            this.btnUsers.Location = new System.Drawing.Point(0, 178);
             this.btnUsers.Name = "btnUsers";
             this.btnUsers.Size = new System.Drawing.Size(261, 50);
             this.btnUsers.TabIndex = 19;
@@ -172,7 +175,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 130);
+            this.panel2.Location = new System.Drawing.Point(0, 170);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(261, 8);
             this.panel2.TabIndex = 18;
@@ -184,7 +187,7 @@
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Location = new System.Drawing.Point(0, 80);
+            this.btnHome.Location = new System.Drawing.Point(0, 120);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(261, 50);
             this.btnHome.TabIndex = 17;
@@ -195,10 +198,12 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnConectar);
+            this.panel1.Controls.Add(this.cbPort);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(261, 80);
+            this.panel1.Size = new System.Drawing.Size(261, 120);
             this.panel1.TabIndex = 16;
             // 
             // btnSalir
@@ -238,6 +243,29 @@
             this.pnlContenedor.Size = new System.Drawing.Size(923, 661);
             this.pnlContenedor.TabIndex = 15;
             // 
+            // cbPort
+            // 
+            this.cbPort.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPort.FormattingEnabled = true;
+            this.cbPort.Location = new System.Drawing.Point(3, 12);
+            this.cbPort.Name = "cbPort";
+            this.cbPort.Size = new System.Drawing.Size(252, 26);
+            this.cbPort.TabIndex = 132;
+            // 
+            // btnConectar
+            // 
+            this.btnConectar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnConectar.FlatAppearance.BorderSize = 0;
+            this.btnConectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConectar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConectar.Location = new System.Drawing.Point(64, 58);
+            this.btnConectar.Name = "btnConectar";
+            this.btnConectar.Size = new System.Drawing.Size(130, 39);
+            this.btnConectar.TabIndex = 133;
+            this.btnConectar.Text = "Conectar";
+            this.btnConectar.UseVisualStyleBackColor = false;
+            this.btnConectar.Click += new System.EventHandler(this.btnConectar_Click);
+            // 
             // Base
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -249,6 +277,7 @@
             this.Name = "Base";
             this.Text = "Base";
             this.pnlOpciones.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -269,6 +298,8 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btnDevoluciones;
         private System.Windows.Forms.Panel pnlContenedor;
+        private System.Windows.Forms.Button btnConectar;
+        private System.Windows.Forms.ComboBox cbPort;
     }
 }
 

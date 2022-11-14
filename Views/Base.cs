@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,37 +14,24 @@ namespace ARC115ProyectoBiblioteca
 {
     public partial class Base : Form
     {
-        //Inicializar formulario
-        /*
-        frmLibros frmlibros;
-        frmInicio frminicio;
-        frmUsuarios frmusuarios;
-        frmPrestamos frmprestamos;
-        frmDevoluciones frmdevoluciones;
-        */
+
+        SerialPort serialPort;
 
         public Base()
         {
             InitializeComponent();
-            /*
-            formlibros = new frmLibros();
-            frmHome = new frmHome();
-            
-            abrirFormulario(frmHome);
-            */
-            /*
-            frmprestamos = new frmPrestamos();
-            frmdevoluciones = new frmDevoluciones();
-            frminicio = new frmInicio();
-            frmusuarios = new frmUsuarios();
-            frmlibros = new frmLibros();
-            */
+            Array myPort = SerialPort.GetPortNames();
+            foreach(Object port in myPort)
+            {
+                cbPort.Items.Add(port);
+            }
             abrirFormulario(new frmInicio());
         }
 
         //Termina la ejecución de la aplicación
         private void btnSalir_Click(object sender, EventArgs e)
         {
+            serialPort.Close();
             Application.Exit();
         }
 
@@ -81,7 +69,7 @@ namespace ARC115ProyectoBiblioteca
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
-            abrirFormulario(new frmUsuarios());
+            abrirFormulario(new frmUsuarios(serialPort));
         }
 
         private void btnLibros_Click(object sender, EventArgs e)
@@ -97,6 +85,22 @@ namespace ARC115ProyectoBiblioteca
         private void btnDevoluciones_Click(object sender, EventArgs e)
         {
             abrirFormulario(new frmDevoluciones());
+        }
+
+        private void btnConectar_Click(object sender, EventArgs e)
+        {
+            serialPort = new SerialPort();
+            serialPort.BaudRate = 9600;
+            serialPort.PortName = cbPort.SelectedItem.ToString();
+
+            try
+            {
+                serialPort.Open();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
         }
     }
 }

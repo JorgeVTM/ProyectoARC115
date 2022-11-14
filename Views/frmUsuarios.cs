@@ -1,11 +1,13 @@
 ﻿using ARC115ProyectoBiblioteca.entity;
 using ARC115ProyectoBiblioteca.entityController;
 using ARC115ProyectoBiblioteca.libs;
+using Org.BouncyCastle.Asn1.Crmf;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,15 +19,18 @@ namespace ARC115ProyectoBiblioteca
     {
         //Variable global
         int id;
+        SerialPort serialPort = null;
 
-        public frmUsuarios()
+        public frmUsuarios(SerialPort serialPort)
         {
             InitializeComponent();
             recargarTabla();
+            this.serialPort = serialPort;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            
             Usuario usuario = new Usuario();
             try
             {
@@ -106,6 +111,23 @@ namespace ARC115ProyectoBiblioteca
                 Console.WriteLine(ex);
             }
 
+        }
+
+        private void btnEscaner_Click(object sender, EventArgs e)
+        {
+            txtRIFD.Clear();
+            try
+            {
+                if(serialPort != null)
+                {
+                    txtRIFD.Text = serialPort.ReadExisting();
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+                serialPort.Close();
+            }
         }
     }
 }
