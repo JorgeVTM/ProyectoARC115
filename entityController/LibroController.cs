@@ -40,13 +40,19 @@ namespace ARC115ProyectoBiblioteca.entityController
         }
         public DataTable findLibrosTable()
         {
-            ConnectionDB conexion = new ConnectionDB();
-            MySqlCommand cmd = new MySqlCommand("select * from libros ", conexion.open());
-
-            MySqlDataReader resultado = cmd.ExecuteReader();
             DataTable tabla = new DataTable();
-            tabla.Load(resultado);
-            conexion.close();
+            try
+            {
+                ConnectionDB conexion = new ConnectionDB();
+                MySqlCommand cmd = new MySqlCommand("select * from libros ", conexion.open());
+                MySqlDataReader resultado = cmd.ExecuteReader();
+                tabla.Load(resultado);
+                conexion.close();
+                
+            }catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
             return tabla;
         }
 

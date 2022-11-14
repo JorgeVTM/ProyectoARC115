@@ -15,7 +15,7 @@ namespace ARC115ProyectoBiblioteca
     public partial class Base : Form
     {
 
-        SerialPort serialPort;
+        SerialPort serialPort = null;
 
         public Base()
         {
@@ -31,7 +31,10 @@ namespace ARC115ProyectoBiblioteca
         //Termina la ejecución de la aplicación
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            serialPort.Close();
+            if(serialPort != null)
+            {
+                serialPort.Close();
+            }
             Application.Exit();
         }
 
