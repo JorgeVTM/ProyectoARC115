@@ -12,7 +12,8 @@ namespace ARC115ProyectoBiblioteca.entity
         public Libro pklibro { get; set; }
         public Usuario pkusuario { get; set; }
         public int estado { get; set; }
-
+        public DateTime fechaEntrega { get; set; }
+        public DateTime fechaPrestamo { get; set; }
         public override string ToString()
         {
             return String.Format("ID: {0} Detalles prestamo: Libro: {1} Usuario:{2}", 

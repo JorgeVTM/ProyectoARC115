@@ -67,7 +67,9 @@ namespace ARC115ProyectoBiblioteca
                 devoluciones.estado = 1;
                 devoluciones.pklibro = prestamos.pklibro;
                 devoluciones.pkusuario = prestamos.pkusuario;
-                
+                devoluciones.fechaEntrega = prestamos.fechaDevolucion;
+                devoluciones.fechaPrestamo = prestamos.fechaPrestamo;
+
                 new LibrosPrestamosController().deletePrestamo(prestamos);
                 new DevolucionesController().addDevolucion(devoluciones);
                 
