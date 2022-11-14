@@ -78,15 +78,14 @@ namespace ARC115ProyectoBiblioteca.entityController
         public void addPrestamo(LibrosPrestamos prestamos)
         {
             ConnectionDB conexion = new ConnectionDB();
-            string query = string.Format(
+            try
+            {
+                string query = string.Format(
                 "insert into libros_prestamos (pklibro, pkusuario, fechaprestamo, fechadevolucion, estado) " +
                 "values ('{0}', '{1}', '{2}', '{3}', '{4}')",
                 prestamos.pklibro.id, prestamos.pkusuario.id, String.Format("{0:yyyy-MM-dd}", prestamos.fechaPrestamo),
                 String.Format("{0:yyyy-MM-dd}", prestamos.fechaDevolucion), prestamos.estado
                 );
-
-            try
-            {
                 MySqlCommand cmd = new MySqlCommand(query, conexion.open());
                 cmd.ExecuteNonQuery();
             }
@@ -101,15 +100,14 @@ namespace ARC115ProyectoBiblioteca.entityController
         public void updatePrestamo(LibrosPrestamos prestamos)
         {
             ConnectionDB conexion = new ConnectionDB();
-            string query = string.Format("update libros_prestamos " +
+            try
+            {
+                string query = string.Format("update libros_prestamos " +
                 "set pklibro='{1}', pkusuario='{2}', fechaprestamo='{3}', fechadevolucion='{4}', estado='{5}' " +
                 "where id={0}",
                 prestamos.pklibro.id, prestamos.pkusuario.id, String.Format("{0:yyyy-MM-dd}", prestamos.fechaPrestamo),
-                String.Format("{0:yyyy-MM-dd}", prestamos.fechaDevolucion), prestamos.estado
-                );
-
-            try
-            {
+                String.Format("{0:yyyy-MM-dd}", prestamos.fechaDevolucion), prestamos.estado);
+                
                 MySqlCommand cmd = new MySqlCommand(query, conexion.open());
                 cmd.ExecuteNonQuery();
             }
@@ -124,10 +122,10 @@ namespace ARC115ProyectoBiblioteca.entityController
         public void deletePrestamo(LibrosPrestamos prestamos)
         {
             ConnectionDB conexion = new ConnectionDB();
-            string query = string.Format("delete from libros_prestamos where id={0}", prestamos.id);
 
             try
             {
+                string query = string.Format("delete from libros_prestamos where id={0}", prestamos.id);
                 MySqlCommand cmd = new MySqlCommand(query, conexion.open());
                 cmd.ExecuteNonQuery();
             }

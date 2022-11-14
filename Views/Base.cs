@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ARC115ProyectoBiblioteca.entityController;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,12 +14,13 @@ namespace ARC115ProyectoBiblioteca
     public partial class Base : Form
     {
         //Inicializar formulario
+        /*
         frmLibros frmlibros;
         frmInicio frminicio;
         frmUsuarios frmusuarios;
         frmPrestamos frmprestamos;
         frmDevoluciones frmdevoluciones;
-
+        */
 
         public Base()
         {
@@ -29,12 +31,14 @@ namespace ARC115ProyectoBiblioteca
             
             abrirFormulario(frmHome);
             */
+            /*
             frmprestamos = new frmPrestamos();
             frmdevoluciones = new frmDevoluciones();
             frminicio = new frmInicio();
             frmusuarios = new frmUsuarios();
             frmlibros = new frmLibros();
-            abrirFormulario(frminicio);
+            */
+            abrirFormulario(new frmInicio());
         }
 
         //Termina la ejecución de la aplicación
@@ -71,27 +75,28 @@ namespace ARC115ProyectoBiblioteca
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            abrirFormulario(frminicio);
+            abrirFormulario(new frmInicio());
+
         }
 
         private void btnUsers_Click(object sender, EventArgs e)
         {
-            abrirFormulario(frmusuarios);
+            abrirFormulario(new frmUsuarios());
         }
 
         private void btnLibros_Click(object sender, EventArgs e)
         {
-            abrirFormulario(frmlibros);
+            abrirFormulario(new frmLibros());
         }
 
         private void btnPrestamos_Click(object sender, EventArgs e)
         {
-            abrirFormulario(frmprestamos);
+            abrirFormulario(new frmPrestamos());
         }
 
         private void btnDevoluciones_Click(object sender, EventArgs e)
         {
-            abrirFormulario(frmdevoluciones);
+            abrirFormulario(new frmDevoluciones());
         }
     }
 }

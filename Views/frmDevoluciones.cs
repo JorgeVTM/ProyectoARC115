@@ -70,6 +70,8 @@ namespace ARC115ProyectoBiblioteca
                 
                 new LibrosPrestamosController().deletePrestamo(prestamos);
                 new DevolucionesController().addDevolucion(devoluciones);
+                
+                cbPrestamos.Items.Remove(prestamos);
 
                 MessageBox.Show("Devolución generado exitosamente");
                 recargarTabla();

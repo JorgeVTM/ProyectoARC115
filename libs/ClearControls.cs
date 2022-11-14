@@ -25,6 +25,14 @@ namespace ARC115ProyectoBiblioteca.libs
                 {
                     ((CheckBox)control).Checked = false;
                 }
+                else if (control is ComboBox)
+                {
+                    ((ComboBox)control).Text = null;
+                }
+                else if (control is DateTimePicker)
+                {
+                    ((DateTimePicker)control).Value = DateTime.Now;
+                }
             }
         }
 
